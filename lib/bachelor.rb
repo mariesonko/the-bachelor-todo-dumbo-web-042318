@@ -3,7 +3,7 @@ data.each do |season_number, contestants|
   if season_number == season
     contestants.each do |contest_name|
       if contest_name ["status"] == "Winner"
-        return contest_name["name"].slpit(" ")
+        return contest_name["name"].split(" ")
       end
     end
   end

@@ -6,13 +6,21 @@ data.each do |season_nbr, contestants|
         return contest_name ["name"].split(" ")[0]
       end
     end
-  end 
+  end
 end
   end
 
 
 def get_contestant_name(data, occupation)
-  # code here
+  data.each do |occup_type, type|
+    if occup_type == occupation
+      type.each do |type_info|
+        if type_info ["name"] = "occupation"
+          return type_info ["name"].split(" ")
+        end
+      end
+  end
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)

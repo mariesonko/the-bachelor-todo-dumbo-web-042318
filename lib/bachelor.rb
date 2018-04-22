@@ -14,8 +14,7 @@ end
 def get_contestant_name(data, occupation)
   data.each do |occup_type, type|
     if occup_type == occupation
-      type.each_value do |type_info| puts type_info|
-  end
+      type.each_value {|type_info| puts type_info}
   end
 end
 end 

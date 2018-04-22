@@ -14,10 +14,14 @@ end
 def get_contestant_name(data, occupation)
   data.each do |occup_type, type|
     if occup_type == occupation
-      type.each_value {|type_info| ["name"]["occupation"] type_info }
+      type.each do |type_info|
+        if type_info [occupation]== "occupation"
+          return type_info["name"]
   end
 end
 end
+end
+end 
 
 def count_contestants_by_hometown(data, hometown)
   # code here

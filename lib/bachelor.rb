@@ -17,7 +17,7 @@ def get_contestant_name(data, occupation)
       type.each_value {|type_info| puts type_info}
   end
 end
-end 
+end
 
 def count_contestants_by_hometown(data, hometown)
   # code here

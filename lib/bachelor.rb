@@ -1,5 +1,5 @@
 def get_first_name_of_season_winner(data, season)
-  data.each_value {|name| puts name}
+  data.each_value {|value| data[season] puts name}
 end
 
 def get_contestant_name(data, occupation)

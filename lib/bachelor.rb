@@ -1,9 +1,9 @@
 def get_first_name_of_season_winner(data, season)
 data.each do |season_number, contestants|
   if season_number == season
-    contestants.each_slice do |contest_name|
+    contestants.each do |contest_name|
       if contest_name ["status"] == "Winner"
-        puts "#{contest_name} "
+        return contest_name["name"].slpit(" ")
       end
     end
   end

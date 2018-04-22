@@ -7,7 +7,7 @@ data.each do |season_number, contestants|
       end
     end
   end
-end 
+end
   end
 
 

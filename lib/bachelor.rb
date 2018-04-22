@@ -14,10 +14,9 @@ end
 def get_contestant_name(data, occupation)
   data.each do |season_nbr, contestant|
       contestant.each do |occup_info|
-        if occup_info [occupation]== "occupation"
+        if occup_info ["occupation"] == occupation
           return occup_info["name"]
   end
-end
 end
 end
 end

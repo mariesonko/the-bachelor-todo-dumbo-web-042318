@@ -12,11 +12,10 @@ end
 
 
 def get_contestant_name(data, occupation)
-  data.each do |occup_type, type|
-    if occup_type == occupation
-      type.each do |type_info|
-        if type_info [occupation]== "occupation"
-          return type_info["name"]
+  data.each do |season_nbr, contestant|
+      contestant.each do |occup_info|
+        if occup_info [occupation]== "occupation"
+          return occup_info["name"]
   end
 end
 end
